@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="blossomGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="140" fill="url(#blossomGrad)" />
+
+  <g fill="#ffffff" transform="translate(0, 15)">
+    <circle cx="256" cy="290" r="20" />
+    
+    <path d="M256,110 C290,190 290,260 256,290 C222,260 222,190 256,110 Z" />
+    
+    <path d="M256,290 C185,230 135,170 135,140 C170,130 225,200 256,290 Z" opacity="0.9" />
+    
+    <path d="M256,290 C327,230 377,170 377,140 C342,130 287,200 256,290 Z" opacity="0.9" />
+    
+    <path d="M256,290 C190,320 140,320 110,290 C120,250 195,250 256,290 Z" opacity="0.75" />
+    
+    <path d="M256,290 C322,320 372,320 402,290 C392,250 317,250 256,290 Z" opacity="0.75" />
+    
+    <rect x="244" y="335" width="24" height="45" rx="12" opacity="0.6" />
+  </g>
+</svg>
