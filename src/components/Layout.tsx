@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import BottomNavigation from "./BottomNavigation";
 
 interface LayoutProps {
     children: ReactNode;
@@ -13,7 +14,11 @@ export default function Layout({ children }: LayoutProps) {
 
             <main className="flex-1 flex flex-col">{children}</main>
 
-            <Footer />
+            <div className="pb-16 md:pb-0">
+                <Footer />
+            </div>
+
+            <BottomNavigation />
         </div>
     );
 }

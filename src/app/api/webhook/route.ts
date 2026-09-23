@@ -40,7 +40,7 @@ export async function POST(request: Request) {
                 `🎯 [TEST MODE] Simulating successful payment for ${targetPackageCode} to ${customerEmail}`,
             );
 
-            const emailSender = process.env.RESEND_FROM_EMAIL || "delivery@blossom-esim.mobi";
+            const emailSender = process.env.RESEND_FROM_EMAIL || "delivery@prontoesim.com";
 
             const {} = await resend.emails.send({
                 from: `Instant eSIM Store <${emailSender}>`,
@@ -126,9 +126,7 @@ export async function POST(request: Request) {
             targetPackageCode = passthroughData?.packageCode;
 
             console.log(`💳 [Lemon Squeezy] Verified payment for ${targetPackageCode}`);
-        }
-
-        else if (nowpaymentsSignature) {
+        } else if (nowpaymentsSignature) {
             const ipnSecret = process.env.NOWPAYMENTS_IPN_SECRET || "";
             const hmac = crypto.createHmac("sha512", ipnSecret);
             const digest = hmac.update(rawBody).digest("hex");

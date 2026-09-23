@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import Logo from "../app/blossom.svg";
 
 export default function Navbar() {
     return (
@@ -6,10 +8,12 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
                 <Link
                     href="/"
-                    className="text-xl font-black tracking-tight text-slate-900 flex items-center gap-2"
+                    className="flex items-center gap-2 text-xl font-black tracking-tight text-slate-900"
                 >
+                    <Image src={Logo} alt="Pronto" width={28} height={28} />
+
                     <span className="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
-                        Blossom
+                        Pronto
                     </span>
                 </Link>
 

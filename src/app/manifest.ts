@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
     return {
-        name: "Blossom eSIM Store",
-        short_name: "Blossom",
+        name: "Pronto eSIM Store",
+        short_name: "ProntoEsim",
         description:
             "Purchase high-speed international travel eSIM profiles anonymously using cryptocurrency.",
         start_url: "/",

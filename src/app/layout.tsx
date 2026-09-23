@@ -16,11 +16,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://blossom-esim.mobi"),
+    metadataBase: new URL("https://www.prontoesim.com"),
 
     title: {
-        default: "Crypto eSIM Store | Buy Travel Mobile Data with USDT & BTC",
-        template: "%s | Crypto eSIM Store",
+        default: "eSIM Store | Buy Travel Mobile Data with USDT & BTC",
+        template: "%s | eSIM Store",
     },
     description:
         "Purchase high-speed international travel eSIM profiles anonymously using cryptocurrency. Supports USDT, TON, BTC, and LTC. Instant QR-code delivery, no KYC, no passports required.",
@@ -46,11 +46,11 @@ export const metadata: Metadata = {
     },
 
     openGraph: {
-        title: "Crypto eSIM Store | Instant Global Internet Connection",
+        title: "eSIM Store | Instant Global Internet Connection",
         description:
             "Stay connected worldwide. Buy travel eSIM plans with USDT, TON, or BTC in 30 seconds. Safe, fast, and completely anonymous.",
-        url: "https://blossom-esim.mobi",
-        siteName: "Crypto eSIM Store",
+        url: "https://www.prontoesim.com",
+        siteName: "eSIM Store",
         locale: "en_US",
         type: "website",
     },
